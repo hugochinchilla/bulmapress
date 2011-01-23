@@ -11,25 +11,35 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+body {
+	font: 62.5%/2.2em Arial,Helvetica,Sans-serif;
+}
+h1, h2, h3, h4, h5, h6, pre, code, p {
+	font-size: 1em;
+}
+
 /* =Structure
 -------------------------------------------------------------- */
 
 #page {
 	display: block;
-	margin: 1em;
+	margin: 0 auto;
+}
+#main {
+	overflow: hidden;
 }
 #primary {
-	float: left;
-	margin: 0 -240px 0 0;
+	float: right;
+	margin: 0 -300px 0 0;
 	width: 100%;
 }
 #content {
-	margin: 0 280px 0 0;
+	margin: 0 300px 0 0;
 }
 #main .widget-area {
-	float: right;
+	float: left;
 	overflow: hidden;
-	width: 220px;
+	width: 280px;
 }
 #colophon {
 	clear: both;
@@ -75,12 +85,45 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #site-title {
 	font-size: 2em;
 	font-weight: bold;
-	margin: .67em 0;
+	margin: 5px 10px 5px 0;
+	float: left;
+	width: 516px;
+}
+#site-title a {
+	height: 90px;
+	width: 516px;
+	display: block;
+	overflow: hidden;
+	background: url(images/bulma_small.jpg) no-repeat;
+	text-indent: -9999px;
+}
+#site-banners {
+	float: left;
+	padding: 27px 0 0 0;
 }
 #site-description {
-	font-size: 1em;
+	clear: left;
 	font-weight: normal;
-	margin: 0 0 1em;
+	margin: 0 0 4px;
+	background: #E88020;
+	color: #FFF;
+	text-align: center;
+	font-size: 1.2em;
+	
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+#site-description a {
+	color: #FFF;
+}
+#site-description span {
+	font-weight: bold;
+}
+
+#header-content {
+	width: 994px;
+	margin: 0 auto;
 }
 
 
@@ -219,6 +262,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	text-align: center;
 }
 
+.hentry {
+	font-size: 1.3em;
+}
+.entry-title {
+	font-size: 1.2em;
+	background: #FFD800;
+	padding: 4px 10px;
+}
+.entry-meta {
+	font-size: 0.8em;
+}
+
 
 /* =Images
 -------------------------------------------------------------- */
@@ -318,6 +373,26 @@ article.comment {
 /* =Widgets
 -------------------------------------------------------------- */
 
+#secondary {
+	border: 1px solid #E88020;
+	background: #FFD800;
+	font-size: 1.3em;
+	
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+#secondary h2 {
+	background: #E88020;
+	color: #FFF;
+	text-align: center;
+	margin-top: 0;
+	font-size: 1.2em;
+}
+#secondary .widget {
+	margin-bottom: 15px;
+}
+
 .widget {
 	display: block;
 }
@@ -336,3 +411,23 @@ article.comment {
 	padding: 1em 0 0;
 }
 
+#site-generator {
+	background: #E88020;
+	color: #FFF;
+	text-align: center;
+
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+#site-generator a {
+	color: #FFF;
+}
+
+
+
+/* =Todo
+-------------------------------------------------------------- */
+#access {
+	display: none !important;
+}

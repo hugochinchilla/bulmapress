@@ -43,8 +43,18 @@
 <div id="page" class="hfeed">
 	<header id="branding">
 			<hgroup role="banner">
-				<h1 id="site-title"><span><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<div id="header-content">
+					<h1 id="site-title"><span><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
+					<div id="site-banners">
+						<a href="http://bulma.net/body.phtml?nIdNoticia=2316" title="Bulma amb el projecte Defective by Desing">
+							<img src="http://bulma.net/images/DBD_banner_cat.png" alt="Bulma amb el projecta Defective by Desing" border="0">
+						</a>
+					</div>
+				</div>
+				<h2 id="site-description">
+					<a href="http://bulma.net/images/bergants.png"><span>B</span>ergantells</a> <span>U</span>suaris de GNU/<span>L</span>inux de <span>M</span>allorca i <span>A</span>fegitons |
+					<span>B</span>isoños <span>U</span>suarios de GNU/<span>L</span>inux de <span>M</span>allorca y <span>A</span>lrededores
+				</h2>
 			</hgroup>
 
 			<nav id="access" role="navigation">
