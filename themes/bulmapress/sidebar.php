@@ -12,13 +12,13 @@
 					<ul>
 						<li><a href="http://bulma.net/wiki/doku.php?id=jornades:index">Jornadas de software libre</a></li>
 						<li><a href="http://breu.bulma.net/">Enlaces breves</a></li>
-						<li><a href="body.phtml?nIdNoticia=1968">La asociacion</a></li>
-						<li><a href="masleidos.phtml">Los mas leidos</a></li>
-						<li><a href="curiosidades.phtml?nTodos=1">Autores</a> [<a href="actividad.phtml">Actividad</a>]</li>
-						<li><a href="comentarios.phtml">Ultimos Comentarios</a></li>
-						<li><a href="todos.phtml">Todos los titulares</a></li>
-						<li><a href="stats/">Estadisticas</a></li>
-						<li><a href="body.phtml?nIdNoticia=720">Guia de estilo</a></li>
+						<li><a href="/body.phtml?nIdNoticia=1968">La asociacion</a></li>
+						<li><a href="/masleidos.phtml">Los mas leidos</a></li>
+						<li><a href="/curiosidades.phtml?nTodos=1">Autores</a> [<a href="actividad.phtml">Actividad</a>]</li>
+						<li><a href="/comentarios.phtml">Ultimos Comentarios</a></li>
+						<li><a href="/todos.phtml">Todos los titulares</a></li>
+						<li><a href="/stats/">Estadisticas</a></li>
+						<li><a href="/body.phtml?nIdNoticia=720">Guia de estilo</a></li>
 						<li><a href="mailto:info@bulma.net?subject=Suggeriment%20Bulma">¿Sugerencias?</a></li>
 						<li><a href="http://bulma.net/wiki/"><strong>Wiki</strong></a></li>
 					</ul>
