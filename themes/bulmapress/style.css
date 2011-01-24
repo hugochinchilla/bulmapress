@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6, pre, code, p {
 	height: 400px;
 }
 #primary {
-	margin: 0 300px 0 300px;
+	margin: 0 290px 0 290px;
 }
 #content {
 	
@@ -275,6 +275,29 @@ h1, h2, h3, h4, h5, h6, pre, code, p {
 	font-size: 0.8em;
 }
 
+.single #content {
+	border: 1px solid #E88020;
+	border-width: 0 1px 1px 1px;
+}
+.single .entry-header {
+	display: block;
+	background: #E88020;
+	color: #FFF;
+}
+.single .entry-header a {
+	color: #FFF;
+}
+.single .entry-title {
+	background: transparent;
+	margin: 0;
+	font-size: 1.6em;
+}
+.single .entry-content {
+	padding: 0 10px;
+}
+.single .entry-meta {
+	padding: 0 10px;
+}
 
 /* =Images
 -------------------------------------------------------------- */
@@ -353,6 +376,9 @@ textarea {
 article.comment {
 	display: block;
 }
+#respond {
+	padding: 0 10px;
+}
 #respond input[type=text] {
 	display: block;
 	width: 60%;
@@ -368,6 +394,12 @@ article.comment {
 }
 #respond .form-allowed-tags code {
 	display: block;
+}
+
+#comments-title {
+	background: #FFD800;
+	font-size: 1.6em;
+	padding: 5px 10px;
 }
 
 
@@ -390,6 +422,9 @@ article.comment {
 	margin-top: 0;
 	font-size: 1.2em;
 }
+.widget-area h2 a {
+	color: #FFF;
+}
 .widget-area .widget {
 	margin-bottom: 15px;
 }
@@ -404,12 +439,25 @@ article.comment {
 	float: left;
 }
 
+.widget-area a {
+	color: #000;
+}
+.widget-area ul {
+	margin: 0;
+}
+.widget-area ul li {
+	line-height: 1.2em;
+}
+
 #right-sidebar {
 	background: #FFF;
 }
 
 #thanks {
 	text-align: center;
+}
+#thanks a {
+	color: #000;
 }
 #categories ul {
 	padding: 0;
@@ -422,6 +470,9 @@ article.comment {
 #categories ul li a {
 	color: #E88020;
 	font-weight: bold;
+}
+#search #s {
+	margin-left: 10px;
 }
 
 

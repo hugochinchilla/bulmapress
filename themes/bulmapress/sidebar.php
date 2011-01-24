@@ -7,25 +7,44 @@
 		<div id="left-sidebar" class="widget-area" role="complementary">
 			<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
+				<aside id="pages" class="widget widget_search">
+					<h2 class="widget-title"><?php _e( 'Contenidos', 'bulmapress' ); ?></h2>
+					<ul>
+						<li><a href="http://bulma.net/wiki/doku.php?id=jornades:index">Jornadas de software libre</a></li>
+						<li><a href="http://breu.bulma.net/">Enlaces breves</a></li>
+						<li><a href="body.phtml?nIdNoticia=1968">La asociacion</a></li>
+						<li><a href="masleidos.phtml">Los mas leidos</a></li>
+						<li><a href="curiosidades.phtml?nTodos=1">Autores</a> [<a href="actividad.phtml">Actividad</a>]</li>
+						<li><a href="comentarios.phtml">Ultimos Comentarios</a></li>
+						<li><a href="todos.phtml">Todos los titulares</a></li>
+						<li><a href="stats/">Estadisticas</a></li>
+						<li><a href="body.phtml?nIdNoticia=720">Guia de estilo</a></li>
+						<li><a href="mailto:info@bulma.net?subject=Suggeriment%20Bulma">¿Sugerencias?</a></li>
+						<li><a href="http://bulma.net/wiki/"><strong>Wiki</strong></a></li>
+					</ul>
+				</aside>
+
+				<aside id="mailing-lists" class="widget widget_search">
+					<h2 class="widget-title">
+						<a href="http://llistes.bulma.net/mailman/listinfo/"><?php _e( 'Listas de correo', 'bulmapress' ); ?></a>
+					</h2>
+					<ul>
+						<li><a href="http://llistes.bulma.net/pipermail/bulmailing/">Archivos bulmailing</a></li>
+						<li><a href="http://llistes.bulma.net/pipermail/bulmages/">Archivos BulmaGes</a></li>
+					</ul>
+				</aside>
+				
+				<aside id="radio" class="widget widget_search">
+					<h2 class="widget-title"><?php _e( 'Radio libre', 'bulmapress' ); ?></h2>
+					<ul>
+						<li><a href="http://desdelaxarxa.net/">Des de la Xarxa</a></li>
+						<li><a href="http://www.onamallorca.net/programs.php?id=53">Mallorca en  Xarxa</a></li>
+					</ul>
+				</aside>
+
 				<aside id="search" class="widget widget_search">
 					<h2 class="widget-title"><?php _e( 'Buscar', 'toolbox' ); ?></h2>
 					<?php get_search_form(); ?>
-				</aside>
-
-				<aside id="archives" class="widget">
-					<h2 class="widget-title"><?php _e( 'Archives', 'toolbox' ); ?></h2>
-					<ul>
-						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
-					</ul>
-				</aside>
-
-				<aside id="meta" class="widget">
-					<h2 class="widget-title"><?php _e( 'Meta', 'toolbox' ); ?></h2>
-					<ul>
-						<?php wp_register(); ?>
-						<aside><?php wp_loginout(); ?></aside>
-						<?php wp_meta(); ?>
-					</ul>
 				</aside>
 
 			<?php endif; // end sidebar widget area ?>
