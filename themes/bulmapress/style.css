@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6, pre, code, p {
 	height: 400px;
 }
 #primary {
+	display: block;
 	margin: 0 290px 0 290px;
 }
 #content {
@@ -270,6 +271,9 @@ h1, h2, h3, h4, h5, h6, pre, code, p {
 	font-size: 1.2em;
 	background: #FFD800;
 	padding: 4px 10px;
+}
+.entry-title a {
+	color: #000;
 }
 .entry-meta {
 	font-size: 0.8em;
