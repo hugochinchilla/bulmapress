@@ -6,6 +6,8 @@
 
 get_header(); ?>
 
+<?php get_sidebar(); ?>
+
 		<div id="primary">
 			<div id="content" role="main">
 
@@ -14,5 +16,4 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

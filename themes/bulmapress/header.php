@@ -40,6 +40,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+<!--<a href="http://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets0.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_gray_6d6d6d.png&path=" alt="Fork me on GitHub"></a>-->
+<!--<a href="http://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets1.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_red_aa0000.png&path=" alt="Fork me on GitHub"></a>-->
+<a href="http://github.com/hugochinchilla/bulmapress"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets2.github.com/img/abad93f42020b733148435e2cd92ce15c542d320?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_green_007200.png&path=" alt="Fork me on GitHub"></a>
 <div id="page" class="hfeed">
 	<header id="branding">
 			<hgroup role="banner">

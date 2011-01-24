@@ -26,20 +26,21 @@ h1, h2, h3, h4, h5, h6, pre, code, p {
 	margin: 0 auto;
 }
 #main {
-	overflow: hidden;
+}
+#left-sidebar {
+	float: left;
+	width: 280px;
+}
+#right-sidebar {
+	float: right;
+	width: 280px;
+	height: 400px;
 }
 #primary {
-	float: right;
-	margin: 0 -300px 0 0;
-	width: 100%;
+	margin: 0 300px 0 300px;
 }
 #content {
-	margin: 0 300px 0 0;
-}
-#main .widget-area {
-	float: left;
-	overflow: hidden;
-	width: 280px;
+	
 }
 #colophon {
 	clear: both;
@@ -373,7 +374,7 @@ article.comment {
 /* =Widgets
 -------------------------------------------------------------- */
 
-#secondary {
+.widget-area {
 	border: 1px solid #E88020;
 	background: #FFD800;
 	font-size: 1.3em;
@@ -382,14 +383,14 @@ article.comment {
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 }
-#secondary h2 {
+.widget-area h2 {
 	background: #E88020;
 	color: #FFF;
 	text-align: center;
 	margin-top: 0;
 	font-size: 1.2em;
 }
-#secondary .widget {
+.widget-area .widget {
 	margin-bottom: 15px;
 }
 
@@ -401,6 +402,26 @@ article.comment {
 }
 .widget-area .widget_search input {
 	float: left;
+}
+
+#right-sidebar {
+	background: #FFF;
+}
+
+#thanks {
+	text-align: center;
+}
+#categories ul {
+	padding: 0;
+	list-style: none;
+}
+#categories ul li {
+	text-align: center;
+	font-size: 1.3em;
+}
+#categories ul li a {
+	color: #E88020;
+	font-weight: bold;
 }
 
 
