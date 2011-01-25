@@ -25,28 +25,57 @@ h1, h2, h3, h4, h5, h6, pre, code, p {
 	display: block;
 	margin: 0 auto;
 }
-#main {
+#main {}
+#primary {
+	display: block;
+	float: left;
+	width: 62%;
+	margin: 0 -83% 0 21%;
 }
+#content {}
 #left-sidebar {
 	float: left;
-	width: 280px;
+	width: 20%;
 }
 #right-sidebar {
 	float: right;
-	width: 280px;
-	height: 400px;
-}
-#primary {
-	display: block;
-	margin: 0 290px 0 290px;
-}
-#content {
-	
+	width: 16%;
 }
 #colophon {
 	clear: both;
 	display: block;
 	width: 100%;
+}
+
+@media only screen and (max-width: 994px) and (min-width: 480px) {
+	#primary {
+		float: left;
+		width: 75% !important;
+		margin: 0 1% 0 0 !important;
+	}
+	#left-sidebar {
+		float: left;
+		width: 23% !important;
+		margin: 0 0 1em 0 !important;
+	}
+	#right-sidebar {
+		float: left;
+		width: 23% !important;
+	}
+}
+@media only screen and (max-width: 479px) {
+	#primary {
+		width: 100% !important;
+		margin: 0 0 1em 0 !important;
+	}
+	#left-sidebar {
+		float: left;
+		width: 49% !important;
+	}
+	#right-sidebar {
+		float: right;
+		width: 49% !important;
+	}	
 }
 
 /* Increase the size of the content area for templates without sidebars */
