@@ -47,37 +47,6 @@ h1, h2, h3, h4, h5, h6, pre, code, p {
 	width: 100%;
 }
 
-@media only screen and (max-width: 994px) and (min-width: 480px) {
-	#primary {
-		float: left;
-		width: 75% !important;
-		margin: 0 1% 0 0 !important;
-	}
-	#left-sidebar {
-		float: left;
-		width: 23% !important;
-		margin: 0 0 1em 0 !important;
-	}
-	#right-sidebar {
-		float: left;
-		width: 23% !important;
-	}
-}
-@media only screen and (max-width: 479px) {
-	#primary {
-		width: 100% !important;
-		margin: 0 0 1em 0 !important;
-	}
-	#left-sidebar {
-		float: left;
-		width: 49% !important;
-	}
-	#right-sidebar {
-		float: right;
-		width: 49% !important;
-	}	
-}
-
 /* Increase the size of the content area for templates without sidebars */
 .full-width #content,
 .image-attachment #content,
@@ -125,10 +94,10 @@ h1, h2, h3, h4, h5, h6, pre, code, p {
 	width: 516px;
 	display: block;
 	overflow: hidden;
-	background: url(images/bulma_small.jpg) no-repeat;
+	background: url(images/bulma_big.jpg) no-repeat;
 	text-indent: -9999px;
 }
-#site-banners {
+#deffective {
 	float: left;
 	padding: 27px 0 0 0;
 }
@@ -153,8 +122,7 @@ h1, h2, h3, h4, h5, h6, pre, code, p {
 }
 
 #header-content {
-	width: 994px;
-	margin: 0 auto;
+	width: 100%;
 }
 
 
@@ -535,4 +503,52 @@ article.comment {
 -------------------------------------------------------------- */
 #access {
 	display: none !important;
+}
+
+
+
+
+@media only screen and (max-width: 994px) and (min-width: 480px) {
+	#primary {
+		float: left;
+		width: 75%;
+		margin: 0 1% 0 0;
+	}
+	#left-sidebar {
+		float: left;
+		width: 23%;
+		margin: 0 0 1em 0;
+	}
+	#right-sidebar {
+		float: left;
+		width: 23%;
+	}
+	#deffective {
+		width: 310px;
+	}
+}
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: 50%;
+	}
+	#primary {
+		width: 100%;
+		margin: 0 0 1em 0;
+	}
+	#left-sidebar {
+		float: left;
+		width: 49%;
+	}
+	#right-sidebar {
+		float: right;
+		width: 49%;
+	}
+	#site-title a {
+		height: 49px;
+		width: 280px;
+		background: url(images/bulma_small.jpg) no-repeat;
+	}
+	#deffective {
+		display: none;
+	}
 }

@@ -7,6 +7,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width" />
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -48,11 +49,9 @@
 			<hgroup role="banner">
 				<div id="header-content">
 					<h1 id="site-title"><span><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-					<div id="site-banners">
-						<a href="http://bulma.net/body.phtml?nIdNoticia=2316" title="Bulma amb el projecte Defective by Desing">
-							<img src="http://bulma.net/images/DBD_banner_cat.png" alt="Bulma amb el projecta Defective by Desing" border="0">
-						</a>
-					</div>
+					<a href="http://bulma.net/body.phtml?nIdNoticia=2316" title="Bulma amb el projecte Defective by Desing">
+						<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/DBD_banner_cat.png" alt="Bulma amb el projecta Defective by Desing" id="deffective">
+					</a>
 				</div>
 				<h2 id="site-description">
 					<a href="http://bulma.net/images/bergants.png"><span>B</span>ergantells</a> <span>U</span>suaris de GNU/<span>L</span>inux de <span>M</span>allorca i <span>A</span>fegitons |
