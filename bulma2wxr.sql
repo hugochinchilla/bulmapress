@@ -33,7 +33,7 @@ select
 
 
 
--- Categories:
+-- Categories:/*{{{*/
 select
 concat(
 '<wp:category>
@@ -44,15 +44,15 @@ concat(
 </wp:category>'
 ) as " "
 from bul_tbl_tipos_noticia
-;
+;/*}}}*/
 
--- Noticia:
+-- Noticia:/*{{{*/
 select
-concat(
+coalesce(concat(
 -- {{{
 '<item>
 	<title>', titulo_noticia, '</title>
-	<link>http://www.bulma.net/?p=', id_noticia, '</link>
+	<link>empty</link>
 	<pubDate>', fecha_alta_noticia, '</pubDate>
 	<dc:creator><![CDATA[', (
 		select email_autor from bul_tbl_autores where id_autor = bul_tbl_noticias.id_autor
@@ -71,7 +71,7 @@ concat(
 		<wp:tag_name>', 'test', '</wp:tag_name>
 	</wp:tag>
 
-	<guid isPermaLink="false">http://www.bulma.net/?p=', id_noticia, '</guid>
+	<guid isPermaLink="false">', id_noticia, '</guid>
 
 	<description></description>
 	<content:encoded><![CDATA[<!--start_raw-->', 
@@ -101,7 +101,7 @@ concat(
 		<wp:comment_id>', id_comentario, '</wp:comment_id>
 		<wp:comment_author><![CDATA[', nombre_comentador, ']]></wp:comment_author>
 		<wp:comment_author_email>', email_comentador, '</wp:comment_author_email>
-		<wp:comment_author_url><![CDATA[', web_comentador, ']]</wp:comment_author_url>
+		<wp:comment_author_url><![CDATA[', web_comentador, ']]></wp:comment_author_url>
 		<wp:comment_author_IP>', coalesce ('', key_comentario), '</wp:comment_author_IP>
 		<wp:comment_date>', fechahora_comentario, '</wp:comment_date>
 		<wp:comment_date_gmt>', fechahora_comentario, '</wp:comment_date_gmt>
@@ -126,19 +126,24 @@ concat(
 '</item>
 '
 -- }}}
-) as " "
+), '') as " "
 from bul_tbl_noticias
 order by id_noticia desc
-limit 50
+/*}}}*/
+
+-- Filtro:/*{{{*/
+-- where...
+limit 2000,50
+/*}}}*/
 ;
 
 
-
--- Footer:
+-- Footer:/*{{{*/
 select 
 '</channel>
 </rss>
-' as " ";
+' as " ";/*}}}*/
+
 
 -- -- Deleteme:
 -- ----select replace (cuerpo_noticia, '&gt;', '>') from bul_tbl_cuerpo_noticias where numero_pagina = 4 limit 1;
